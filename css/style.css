@@ -86,7 +86,7 @@ button, input {
   margin-top: 20px;
 }
 
-.add-items input, .toggle-items input, .remove-items input, button {
+.add-items input, .toggle-items input, .remove-items input, .remove-checked input, button {
   padding: 10px;
   outline: 0;
   border: 1px solid rgba(0,0,0,0.1);

@@ -2,8 +2,9 @@
   const removeItems = document.querySelector('.remove-items')
   const buttons = document.querySelectorAll('.button')
   const itemsList = document.querySelector('.beers')
+  const removeChecked = document.querySelector('.remove-checked')
   // if there is no item string, create an empty array
-  const items = JSON.parse(localStorage.getItem('items')) || []
+  let items = JSON.parse(localStorage.getItem('items')) || []
 
   function addItem(e) {
     // prevent the form from submitting
@@ -28,6 +29,14 @@
     populateList([], itemsList)
   }
 
+  // remove all checked items
+  const removeCheckedBeer = e => {
+    e.preventDefault()
+    items = items.filter(item => item.done !== true)
+    localStorage.setItem('items', JSON.stringify(items))
+    populateList(items, itemsList)
+  }
+
   // toggle a single item
   const toggleDone = e => {
     if (!e.target.matches('input')) return // skip this unless it's an input
@@ -42,6 +51,7 @@
   const toggleAllItems = e => {
     items.forEach((item, index, array) => {
       e.target.name === 'checkAll' ? (items[index].done = true) : (items[index].done = false)
+      console.log(e.target.name)
     })
     localStorage.setItem('items', JSON.stringify(items))
     populateList(items, itemsList)
@@ -62,6 +72,7 @@
   addItems.addEventListener('submit', addItem)
   removeItems.addEventListener('click', removeAllItems)
   itemsList.addEventListener('click', toggleDone)
+  removeChecked.addEventListener('submit', removeCheckedBeer)
   buttons.forEach((button) => button.addEventListener('click', toggleAllItems))
   
   // call populate to render the list on page load
