@@ -51,7 +51,6 @@
   const toggleAllItems = e => {
     items.forEach((item, index, array) => {
       e.target.name === 'checkAll' ? (items[index].done = true) : (items[index].done = false)
-      console.log(e.target.name)
     })
     localStorage.setItem('items', JSON.stringify(items))
     populateList(items, itemsList)

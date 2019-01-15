@@ -15,10 +15,14 @@ html {
 }
 
 svg {
-  fill:white;
+  fill:rgb(255, 255, 255);
   padding: 10px;
   width: 300px;
   margin-bottom: 1rem;
+}
+
+svg:hover {
+  fill: rgb(20, 19, 19);
 }
 
 .wrapper {
@@ -46,6 +50,11 @@ button, input {
   color: rgb(230, 216, 216);
   margin: 0.5rem;
   font-size: 0.8rem;
+  cursor: pointer;
+}
+
+button:hover, input:hover {
+  background: rgb(100, 94, 94);
 }
 
 .beers {
