@@ -45,7 +45,7 @@ h2 {
   font-weight: 200;
 }
 
-button, input {
+button, form input {
   background: rgb(53, 50, 50);
   color: rgb(230, 216, 216);
   margin: 0.5rem;
@@ -53,7 +53,7 @@ button, input {
   cursor: pointer;
 }
 
-button:hover, input:hover {
+button:hover, form input:hover {
   background: rgb(100, 94, 94);
 }
 
