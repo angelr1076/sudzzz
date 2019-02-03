@@ -14,6 +14,10 @@ html {
   box-sizing: inherit; 
 }
 
+html {
+  font-size: 62.5%;
+}
+
 svg {
   fill:rgb(255, 255, 255);
   padding: 10px;
@@ -35,13 +39,14 @@ svg:hover {
 h1 {
   text-align: center;
   margin-top: 0;
-  font-size: 3.6rem;
+  font-size: 5.6rem;
   color: white;
 }
 
 h2 {
   text-align: center;
   margin: 0;
+  font-size: 3.1rem;
   font-weight: 200;
 }
 
@@ -49,7 +54,7 @@ button, form input {
   background: rgb(53, 50, 50);
   color: rgb(230, 216, 216);
   margin: 0.5rem;
-  font-size: 0.8rem;
+  font-size: 1.4rem;
   cursor: pointer;
 }
 
@@ -69,7 +74,7 @@ button:hover, form input:hover {
   padding: 10px 0;
   font-weight: 100;
   letter-spacing: .1em;
-  font-size: 1.2rem;
+  font-size: 2.3rem;
   display: flex;
 }
 
@@ -102,7 +107,7 @@ button:hover, form input:hover {
 }
 
 footer p {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   color: rgb(243, 233, 233);
 }
 
