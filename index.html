@@ -1,52 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Sudzzz Beer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=ZCOOL+QingKe+HuangYou"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="/images/beer.jpg" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Sudzzz Beer</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="/css/style.css">
-  <link href="https://fonts.googleapis.com/css?family=ZCOOL+QingKe+HuangYou" rel="stylesheet">
-  <link rel="icon" href="/images/beer.jpg">
-</head>
-
-<body>
-  <header>
-    <img class="beer" src="/images/beer.svg" alt="beer-svg">
-    <h1 class="header">Sudzzz</h1>
-  </header>
-  <main>
-    <div class="wrapper">
-      <h2>Add your favorite beer to the list</h2>
-      <ul class="beers">
-        <li></li>
-      </ul>
-      <form class="add-items">
-        <input type="text" name="item" placeholder="Beer Name" required>
-        <button type="submit" value="+ Add Beer">Add Beer</button>
-      </form>
-      <form class="remove-items">
-        <button type="submit" name="removeAll" value="-Remove All Beer">-Remove All Beer</button>
-      </form>
-      <button type="button" class="button check-all" name="checkAll">📫 Check All Beer</button>
-      <button type="button" class="button uncheck-all" name="uncheckAll"> 📭 Uncheck All Beer</button>
-      <form class="remove-checked">
-        <button type="submit" name="removeChecked" value="-Remove Checked">-Remove Checked</button>
-      </form>
-    </div>
-  </main>
-  <footer>
-    <p>Made by Angel Rodriguez with lots of <i>☕️</i></p>
-  </footer>
-  <footer>
-    <p>Beer SVG by Kaylen Yul Lee from the Noun Project</p>
-  </footer>
-  <!--
+  <body>
+    <header>
+      <img class="beer" src="/images/beer.svg" alt="beer-svg" />
+      <h1 class="header">Sudzzz</h1>
+    </header>
+    <main>
+      <div class="wrapper">
+        <h2 id="greeting">Add your favorite beer to the list</h2>
+        <ul class="beers">
+          <li></li>
+        </ul>
+        <form class="add-items">
+          <input type="text" name="item" placeholder="Beer Name" required />
+          <button type="submit" value="+ Add Beer">Add Beer</button>
+        </form>
+        <form class="remove-items">
+          <button type="submit" name="removeAll" value="-Remove All Beer">
+            -Remove All Beer
+          </button>
+        </form>
+        <button type="button" class="button check-all" name="checkAll">
+          📫 Check All Beer
+        </button>
+        <button type="button" class="button uncheck-all" name="uncheckAll">
+          📭 Uncheck All Beer
+        </button>
+        <form class="remove-checked">
+          <button type="submit" name="removeChecked" value="-Remove Checked">
+            -Remove Checked
+          </button>
+        </form>
+      </div>
+    </main>
+    <footer>
+      <p>Made by Angel Rodriguez with lots of <i>☕️</i></p>
+    </footer>
+    <footer>
+      <p>Beer SVG by Kaylen Yul Lee from the Noun Project</p>
+    </footer>
+    <!--
       Beer SVG Cred:
       https://thenounproject.com/search/?q=beer&i=902531#
    -->
-  <script src="/js/script.js"></script>
-</body>
-
+    <script src="/js/script.js"></script>
+  </body>
 </html>
