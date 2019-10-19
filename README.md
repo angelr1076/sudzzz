@@ -1,5 +1,4 @@
 # sudzzz
-Fun little beer me app
 
 Inspired by a local storage exercise after completing JavaScript 30. I created my own beer menu where you can add or delete beer from the list, plus a few other methods to play with. 
 
